@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="options_array">
+        <item>兔子</item>
+        <item>紅車</item>
+<!--        <item>藍車</item>-->
+        <!-- 添加更多选项 -->
+    </string-array>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/arFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:popupTheme="@style/ThemeOverlay.MaterialComponents.ActionBar"
+        android:theme="@style/AppTheme.Toolbar">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".ArActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="請選擇"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/optionsBtn"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/ReturnBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.004" />
+
+        <Button
+            android:id="@+id/ReturnBtn"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="4dp"
+            android:text="返回"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.004" />
+
+        <Button
+            android:id="@+id/optionsBtn"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            android:text="選擇"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.005" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

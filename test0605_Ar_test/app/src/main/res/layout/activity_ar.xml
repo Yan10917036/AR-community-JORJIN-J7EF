@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/arFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:popupTheme="@style/ThemeOverlay.MaterialComponents.ActionBar"
+        android:theme="@style/AppTheme.Toolbar">
+
+        <Button
+            android:id="@+id/ReturnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回主頁面"
+            android:layout_gravity="end"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+</FrameLayout>
+
